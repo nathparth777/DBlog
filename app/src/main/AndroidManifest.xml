@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dblog">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.dblog.Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ProBlog_detail"
+            android:parentActivityName=".Profile"></activity>
+
+        <activity
+            android:name=".Forget_pass"
+            android:parentActivityName=".authentication.Login" />
+        <activity
+            android:name=".Update_pass"
+            android:parentActivityName=".Setting" />
+        <activity
+            android:name=".Profile_edit"
+            android:parentActivityName=".Profile" />
+        <activity
+            android:name=".Profile"
+            android:parentActivityName=".Postview" />
+        <activity
+            android:name=".Blog_detail"
+            android:parentActivityName=".Postview" />
+        <activity android:name=".UserPicName" />
+        <activity
+            android:name=".Setting"
+            android:parentActivityName=".Postview" />
+        <activity
+            android:name=".Help"
+            android:parentActivityName=".Postview" />
+        <activity android:name=".Postview" />
+        <activity
+            android:name=".StoreData"
+            android:parentActivityName=".Postview" />
+        <activity android:name=".authentication.Signup" />
+        <activity android:name=".authentication.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+
+</manifest>

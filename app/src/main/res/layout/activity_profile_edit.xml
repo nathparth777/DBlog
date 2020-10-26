@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_edit">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/constrain"
+        android:background="@drawable/back_gradient">
+
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04000002" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04000002" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_pic"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/choosepic"
+            android:background="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.703" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/etoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/title_name"
+        android:textSize="28dp"
+        android:layout_below="@+id/constrain"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_name"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@drawable/passs"
+        android:layout_below="@+id/title_name"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+</RelativeLayout>

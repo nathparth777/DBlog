@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Setting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stoolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/change_delete"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+
+            android:background="@drawable/delete_acc_png"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toEndOf="@+id/change_password"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.413" />
+
+        <Button
+            android:id="@+id/change_password"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/update_pass_png"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.418" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:wlv_borderColor="@color/colorAccent"
+
+
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="50"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="rectangle"
+        app:wlv_waveAmplitude="50"
+        app:wlv_waveColor="@color/colorAccent" />
+</LinearLayout>

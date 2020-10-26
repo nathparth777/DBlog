@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".StoreData">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/store_toolbar"
+        app:title="Add Blog"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/userimage"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Blog picture"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed1"
+        android:textSize="21dp"
+        android:gravity="start"
+        android:inputType="textEmailSubject"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blog"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/ed2"
+        android:textSize="21dp"
+        android:gravity="start"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:text="Save Data"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
